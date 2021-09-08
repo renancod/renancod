@@ -1,0 +1,57 @@
+#include <stdio.h>
+/*calculadora em "C"
+
+int main(void)
+{
+  //Declaração de variaveis.      
+	float num1,num2;
+ //Declaração de string. 
+	char oper;
+        
+        {
+  //informações de funcionamento.          
+			printf("\nDigite a expressao na forma: 'numero+operador+numero'\n");
+ 
+            printf("Operacoes disponiveis\n");
+            printf("soma='+'\n");
+            printf("subtração='-'\n");
+            printf("multiplicação='*'\n");
+            printf("divisão='/'\n");
+ //Abertura do 'input'.                 
+            scanf("%f", &num1);
+            scanf(" %c",&oper);
+            scanf("%f", &num2);
+/*Realização das operações e resultado.
+Neste caso utilizamos o comando 'switch...case',
+ que reduz a complexidade dos 'if...else'. */  
+            switch( oper )
+            {
+                case '+':
+                        printf("O resultado é: %.2f\n\n", num1 + num2);
+                        break;
+
+                case '-':
+                        printf("O resultado é:%.2f\n\n", num1 - num2);
+                        break;
+
+                case '*':
+                        printf("O resultado é:%.2f\n\n", num1 * num2);
+                        break;
+
+                case '/':
+                        if(num2 != 0)
+                            printf("O resultado é:%.2f\n\n", num1 / num2);
+                        else
+                            printf("Nao existe divisao por 0\n\n");
+                        break;
+
+                case '%':
+                        printf("%d\n\n", (int)num1 % (int)num2);
+                        break;
+
+                
+            }
+
+        }
+
+}
