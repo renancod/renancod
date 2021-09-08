@@ -1,0 +1,29 @@
+
+
+int main() {
+  float peso, altura, imc;
+
+    printf("digite seu peso:");
+	scanf("%f",&peso);
+
+	printf("digite sua altura:");
+		scanf("%f",&altura);
+	imc=peso/(altura*altura);
+	
+printf("seu imc é: %.2f",imc);
+
+if (imc<=18.5){
+	printf("magro");
+}
+else if (imc<=24.9){
+	printf("esta no peso");
+}
+else if (imc<=35){
+	printf("fora do peso ideal");
+}
+else if (imc>35){
+	printf("obeso");
+}
+	
+return 0;
+}
